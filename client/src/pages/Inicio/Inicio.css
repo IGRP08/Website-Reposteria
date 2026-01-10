@@ -1,0 +1,54 @@
+.inicio-Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 885px;
+    height: 450px;
+    padding: 3rem;
+    margin: 8rem auto 3rem;
+    transition: transform 0.6s ease-in-out;
+}
+
+.inicio-Container:hover {
+    transition: transform 0.6s ease-in-out;
+    transform: transform 0.6s ease-out;
+    transform: scale(1.1);
+}
+
+.inicio-Visual {
+    background-color: rgba(200, 52, 202, 0.25);
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.inicio-img {
+    width: 400px;
+    height: 360px;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+.text-section {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    width: 400px;
+    line-height: 1.4;
+}
+
+.text-section h2 {
+    margin-bottom: 1rem;
+    font-family: 'Great Vibes';
+    font-size: 2.5rem;
+    color: rgb(139, 94, 60);
+}
+
+.text-section p {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.3rem;
+    color: rgb(80, 49, 28);
+    padding: 3rem;
+    margin-bottom: 3rem;
+    line-height: 2.7rem;
+}

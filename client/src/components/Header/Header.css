@@ -1,0 +1,70 @@
+:root {
+    --header-height: 5.1rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+.h-wrapper {
+    position: fixed;
+    width: 100%;
+    height: var(--header-height);
+    background-color: rgb(245, 235, 209);
+    padding: 0 10rem;
+    top: 0;
+
+}
+
+.h-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.2);
+    transition: transform 0.5s ease-out;
+}
+
+.h-menu {
+    list-style: none;
+    display: flex;
+    font-family: 'Dancing Script';
+    font-size: 2rem;
+    font-weight: 800;
+    gap: 5rem;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.h-menu a {
+    text-decoration: none;
+    color: rgb(200, 52, 202);
+}
+
+.h-menu li:hover {
+    color: rgb(37, 153, 255);
+    transition: 0.2s;
+    transform: scale(1.1);
+    border-bottom: 3px solid rgb(37, 153, 255);
+}
+
+.h-menu a:hover {
+    color: rgb(37, 153, 255);
+
+}
