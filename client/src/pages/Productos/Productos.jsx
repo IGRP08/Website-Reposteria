@@ -1,95 +1,53 @@
-// import React from 'react'
-// import '/styles.css'
-// import './Productos.css'
-
-// const Productos = () => {
-//     return (
-//         <div>
-//             <h1 className='section-title'>Productos</h1>
-
-//             <div className="products-wrapper">
-//                 <div className='relative group'>
-//                     <div className="product-container">
-//                         <h3 className='product-text'>Postres</h3>
-//                     </div>
-//                     <img className='w-55 h-70' src="/assets/Bizcocho-porcion-bg.png" alt="Porcion Bizcocho" />
-//                 </div>
-//                 <div className="product-container">
-//                     <h3 className='product-text'>Bizcocho Cumpleaños</h3>
-//                     <img className='object-right-top w-95 h-120 ' src="/assets/cumpleanos-bg.png" alt="Porcion Bizcocho" />
-//                 </div>
-//                 <div className="product-container">
-//                     <h3 className='product-text'>Sweet Table</h3>
-//                     <div className='image-container'>
-//                         <img className='object-right-top w-95 h-120' src="/assets/macarronies-bg.png" alt="Sweet Table" />
-//                     </div>
-//                 </div>
-//                 <div className="product-container">
-//                     <h3 className='product-text'>Bodas</h3>
-//                     <img className='w-95 h-120' src="/assets/bodas-bg.png" alt="Porcion Bizcocho" />
-//                 </div>
-//             </div>
-
-//         </div>
-//     )
-// }
-
-// export default Productos
-
 import React from 'react';
 import './Productos.css';
 
 const Productos = () => {
-    // We define the unique position and color for each product here
     const products = [
         {
             title: "Postres",
             img: "/assets/Bizcocho-porcion-bg.png",
-            bgColor: "bg-[#E7A5E1]", // Figma Purple
-            // Centered vertically on the right edge
-            imgPos: "right-16 top-28 -translate-y-1/2 w-55 h-70"
+            bgColor: "bg-[#C834CA99]",
+            textColor: "text-white",
+            imgPos: "right-2 top-1/2 -translate-y-1/2 w-36 md:right-16 md:top-28 md:w-[220px] md:h-[280px]"
         },
         {
             title: <>Bizcocho<br />Cumpleaños</>,
             img: "/assets/cumpleanos-bg.png",
-            bgColor: "bg-[#E7A5E1]",
-            // Breaking the top and right edges
-            imgPos: "-right-15 -top-45 w-95 h-120"
+            bgColor: "bg-[#F5EDD8] md:bg-[#C834CA99]",
+            textColor: " text-[#C834CA] md:text-white",
+            // Mobile: Smaller top overlap | Desktop: Your original values
+            imgPos: "-right-4 -top-20 w-48 md:-right-[60px] md:-top-[180px] md:w-[380px] md:h-[480px]"
         },
         {
             title: "Sweet Table",
             img: "/assets/macarronies-bg.png",
-            bgColor: "bg-[#F5EDD8]", // Figma Beige
-            // Sitting on the bottom right edge
-            imgPos: "-right-18 -top-40 w-85 h-108"
+            bgColor: "bg-[#C834CA99] md:bg-[#F5EDD8]",
+            textColor: " text-white md:text-[#C834CA]",
+            imgPos: "-right-6 -top-25 w-44 md:-right-[72px] md:-top-[160px] md:w-[340px] md:h-[430px]"
         },
         {
             title: "Bodas",
             img: "/assets/bodas-bg.png",
             bgColor: "bg-[#F5EDD8]",
-            // Breaking the top and right edges
-            imgPos: "-right-30 -top-55 w-105 h-135"
+            textColor: " text-[#C834CA]",
+            imgPos: "-right-6 -top-22 w-48 md:-right-[120px] md:-top-[220px] md:w-[420px] md:h-[540px]"
         },
 
     ];
 
     return (
-        <div className="section-container">
-            <h1 className='section-title text-left !ml-16 !mt-4 !mb-26'>Productos</h1>
+        <div className="section-container overflow-x-clip">
+            <h1 className='text-center md:text-left !mb-14 md:!ml-16 md:!mt-4 md:!mb-26 section-title'>Productos</h1>
 
 
-            {/* Grid container with large horizontal gap to allow images space to "bleed" */}
-            <div className="flex flex-wrap justify-center gap-x-32 gap-y-24 mx-w-[1200px] mx-auto">
+            <div className="flex flex-wrap justify-center gap-x-25 gap-y-20 md:gap-x-32 md:gap-y-28 mx-w-[1200px] mx-auto">
                 {products.map((product, index) => (
-                    <div key={index} className="product-card-wrapper w-full md:w-[450px]">
+                    <div key={index} className="product-card-wrapper w-full w-[90%] md:w-[500px]">
 
-                        {/* 1. The Colored Background Box */}
-                        <div className={`product-container ${product.bgColor}`}>
-                            <h3 className='product-text'>{product.title}</h3>
+                        <div className={`product-container h-[8rem] md:h-[12rem] ${product.bgColor}`}>
+                            <h3 className={`product-text text-[1.5rem] font-[300] md:text-[2.5rem] font-[400] ${product.textColor}`}>{product.title}</h3>
                         </div>
 
-                        {/* 2. The Overlapping Image */}
-                        {/* 'absolute' moves it out of the box, 'drop-shadow' makes it look premium */}
                         <img
                             src={product.img}
                             alt={product.title}

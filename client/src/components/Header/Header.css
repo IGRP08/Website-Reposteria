@@ -13,10 +13,12 @@
 .h-wrapper {
     position: fixed;
     width: 100%;
+    max-width: 100%;
     height: var(--header-height);
-    background-color: rgb(245, 235, 209);
-    padding: 0 10rem;
+    background-color: #F5EBD1;
     top: 0;
+    display: flex;
+    align-items: center;
 
 }
 
@@ -24,7 +26,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    width: 100%
 }
 
 .logo {
