@@ -1,3 +1,8 @@
 .footer-container {
     background-color: #F5EBD1;
 }
+
+.footer-container p {
+    font-family: 'Pacifico', cursive;
+    color: rgb(80, 49, 28);
+}

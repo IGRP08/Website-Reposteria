@@ -59,13 +59,10 @@
 .service-img {
     border-radius: 10px;
     margin: 2rem auto 2rem;
-
 }
 
 .service-text {
     font-family: pacifico;
-    font-size: 1.8rem;
-    font-weight: 450;
     margin-bottom: 1rem;
     color: rgb(200, 52, 202);
 }

@@ -3,22 +3,22 @@ import './Inicio.css'
 
 const Inicio = () => {
     return (
-        <div className="grid grid-cols-1 w-[325px] !mt-26 !mb-20 !mx-auto justify-items-center items-center md:grid-cols-2 md:flex-row 
-        md:w-[885px] md:h-[450px]  md:!mt-[8rem] md:!p-[3rem] md:items-center md:justify-between 
+        <div className="grid grid-cols-1 w-[325px] !mt-26 !mb-20 !mx-auto justify-items-center items-center lg:grid-cols-2 lg:flex-row 
+        lg:w-[885px] lg:h-[450px]  lg:!mt-[8rem] lg:!p-[3rem] lg:items-center lg:justify-between 
         inicio-Container inicio-Visual text-section">
 
-            <h2 className='order-1 !p-10 md:col-start-1 md:row-start-1 md:self-end'>
+            <h2 className='order-1 !p-10 lg:col-start-1 lg:row-start-1 lg:self-end'>
                 Makarios Postres
             </h2>
-            <p className="order-3 md:col-start-1 md:row-start-2 md:self-start">
+            <p className="order-3 lg:col-start-1 lg:row-start-2 lg:self-start">
                 Donde Tus Deseos<br />
                 Mas Dulces<br />
                 Son Nuestra Pasion
             </p>
 
-            <div className="order-2 w-full flex justify-center items-center md:col-start-2 md:row-start-1 md:row-span-2">
-                <img className="w-[280px] h-[225px]  rounded-[1rem]  md:w-[400px] 
-                md:h-[360px]" src="/assets/bizcocho.jpg" alt="" />
+            <div className="order-2 w-full flex justify-center items-center lg:col-start-2 lg:row-start-1 lg:row-span-2">
+                <img className="w-[280px] h-[225px]  rounded-[1rem]  lg:w-[400px] 
+                lg:h-[360px]" src="/assets/bizcocho.jpg" alt="" />
             </div>
 
         </div>

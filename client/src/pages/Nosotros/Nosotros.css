@@ -1,0 +1,13 @@
+.about-container {
+    border-radius: 1.5rem;
+}
+
+.about-title {
+    margin-bottom: 1rem;
+    font-family: 'Great Vibes';
+}
+
+.about-text {
+    font-family: 'Pacifico', cursive;
+    line-height: 2.7rem;
+}

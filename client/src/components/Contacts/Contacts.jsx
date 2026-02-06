@@ -74,15 +74,15 @@ const Contacts = ({ className }) => {
         /* Note: We use template literals (backticks) to combine classes */
         <div className={`social-buttons-container ${className}`}>
             <button className="social-button" onClick={() => openLink(whatsappURL)}>
-                <img src="/assets/Whatsapp_icon-color.png" className="w-7 h-7 md:w-12 md:h-12" alt="Whatsapp" />
+                <img src="/assets/Whatsapp_icon-color.png" className="w-7 h-7 lg:w-12 lg:h-12" alt="Whatsapp" />
             </button>
 
             <button className="social-button" onClick={() => openLink(instagramURL)}>
-                <img src="/assets/instagram_icon_color.png" className="w-7 h-7 md:w-12 md:h-12" alt="Instagram" />
+                <img src="/assets/instagram_icon_color.png" className="w-7 h-7 lg:w-12 lg:h-12" alt="Instagram" />
             </button>
 
             <button className="social-button" onClick={() => openLink(facebookURL)}>
-                <img src="/assets/facebook_icon-color.png" className="w-7 h-7 md:w-12 md:h-12" alt="Facebook" />
+                <img src="/assets/facebook_icon-color.png" className="w-7 h-7 lg:w-12 lg:h-12" alt="Facebook" />
             </button>
         </div>
     );
