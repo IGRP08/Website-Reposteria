@@ -13,7 +13,7 @@ const Header = () => {
       <div className='h-container max-w-7xl mx-auto'>
 
         <Link to="/" onClick={closeMenu}>
-          <img className="logo" src="assets/logo-bg.png" alt="Logo" />
+          <img className="!mx-6 logo" src="assets/logo-bg.png" alt="Logo" />
         </Link>
         <nav className='hidden lg:block'>
           <ul className='h-menu'>
@@ -25,7 +25,7 @@ const Header = () => {
         </nav>
 
         <button
-          className="lg:hidden flex flex-col gap-1.5 z-[1100]"
+          className="!mx-6 lg:hidden flex flex-col gap-1.5 z-[1100]"
           onClick={() => setMenuOpen(!menuOpen)}>
 
           <span className={`w-8 h-1 bg-[#c834ca] rounded transition-all

@@ -2,7 +2,10 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
-export default defineConfig({
-  plugins: [react()],
-  // base: '/Website-Reposteria/',
+export default defineConfig(({ mode }) => {
+
+  return {
+    base: mode === 'production' ? '/Website-Reposteria/' : '/',
+    plugins: [react()],
+  }
 })
