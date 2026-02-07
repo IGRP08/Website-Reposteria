@@ -55,6 +55,8 @@ import Footer from './src/components/Footer/Footer' // Changed to relative path
 function App() {
   const [count, setCount] = useState(0)
 
+  console.log("App rendered")
+
   return (
     /* Add the basename here. It must match your repo name exactly */
     <Router basename="/Website-Reposteria">
