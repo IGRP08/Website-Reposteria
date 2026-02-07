@@ -1,5 +1,5 @@
 import React from 'react'
-import './nosotros.css'
+import './Nosotros.css'
 
 const Nosotros = () => {
     return (
@@ -43,7 +43,7 @@ const Nosotros = () => {
                             escuchado y comprendido. <br /><br />
 
                             Nuestros clientes no solo confían en nuestro trabajo, sino que nos consideran parte de sus momentos más
-                            importantes. Honramos esa confianza dando lo mejor de nosotros, una y otra vez, hasta que el resultado
+                            importantes. Honramos esa confianza dando lo mejor de Nosotros, una y otra vez, hasta que el resultado
                             sea exactamente lo que esperabas. <br /><br />
 
                             Nuestra pasión es hacerte feliz y que te sientas plenamente satisfecho; sin prisas, sin excusas y siempre con amor.

@@ -28,7 +28,7 @@ function App() {
             <Route path='/' element={<Inicio />} />
             <Route path='/servicios' element={<Servicios />} />
             <Route path='/productos' element={<Productos />} />
-            <Route path='/nosotros' element={<Nosotros />} />
+            <Route path='/Nosotros' element={<Nosotros />} />
           </Routes>
         </div>
         <Footer className="fixed bottom-0 left-0 w-full z-40" />

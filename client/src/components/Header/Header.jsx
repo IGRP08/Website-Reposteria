@@ -20,7 +20,7 @@ const Header = () => {
             <li><Link to="/">Inicio</Link></li>
             <li><Link to="/servicios">Servicios</Link></li>
             <li><Link to="/productos">Productos</Link></li>
-            <li><Link to="/nosotros">Nosotros</Link></li>
+            <li><Link to="/Nosotros">Nosotros</Link></li>
           </ul>
         </nav>
 
@@ -46,7 +46,7 @@ const Header = () => {
             <li><Link to="/" onClick={closeMenu}>Inicio</Link></li>
             <li><Link to="/servicios" onClick={closeMenu}>Servicios</Link></li>
             <li><Link to="/productos" onClick={closeMenu}>Productos</Link></li>
-            <li><Link to="/nosotros" onClick={closeMenu}>Nosotros</Link></li>
+            <li><Link to="/Nosotros" onClick={closeMenu}>Nosotros</Link></li>
           </ul>
 
         </div>
