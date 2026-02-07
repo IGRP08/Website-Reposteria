@@ -1,5 +1,5 @@
 :root {
-    --header-height: 5.1rem;
+    --Header-height: 5.1rem;
 }
 
 * {
@@ -14,7 +14,7 @@
     position: fixed;
     width: 100%;
     max-width: 100%;
-    height: var(--header-height);
+    height: var(--Header-height);
     background-color: #F5EBD1;
     top: 0;
     display: flex;
