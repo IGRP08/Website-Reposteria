@@ -1,26 +1,66 @@
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+// import { useState } from 'react'
+// import Layout from './src/components/Layout/Layout'
+// import './App.css'
+// import Inicio from './src/pages/Inicio/Inicio'
+// import Servicios from './src/pages/Servicios/Servicios'
+// import Productos from './src/pages/Productos/Productos'
+// import Nosotros from './src/pages/Nosotros/Nosotros'
+// import Contacts from './src/components/Contacts/Contacts'
+// import Footer from './src/components/Footer/Footer'
+
+
+
+
+
+// function App() {
+//   const [count, setCount] = useState(0)
+
+//   return (
+//     <Router basename="/Website-Reposteria">
+//       <div className="app">
+//         <div className='app.container'>
+//           < Layout />
+//           <Contacts className="!hidden md:!flex flex-col fixed top-[15%] right-[4%] z-50 gap-4" />
+//         </div>
+//         <div className="pb-32">
+//           <Routes>
+//             <Route path='/' element={<Inicio />} />
+//             <Route path='/servicios' element={<Servicios />} />
+//             <Route path='/productos' element={<Productos />} />
+//             <Route path='/Nosotros' element={<Nosotros />} />
+//           </Routes>
+//         </div>
+//         <Footer className="fixed bottom-0 left-0 w-full z-40" />
+
+//       </div >
+//     </Router >
+//   )
+// }
+
+// export default App
+
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { useState } from 'react'
-import Layout from './src/components/Layout/Layout'
+import Layout from './src/components/Layout/Layout' // Changed to relative path
 import './App.css'
-import Inicio from './src/pages/Inicio/Inicio'
-import Servicios from './src/pages/Servicios/Servicios'
-import Productos from './src/pages/Productos/Productos'
-import Nosotros from './src/pages/Nosotros/Nosotros'
-import Contacts from './src/components/Contacts/Contacts'
-import Footer from './src/components/Footer/Footer'
-
-
-
-
+import Inicio from './src/pages/Inicio/Inicio' // Changed to relative path
+import Servicios from './src/pages/Servicios/Servicios' // Changed to relative path
+import Productos from './src/pages/Productos/Productos' // Changed to relative path
+import Nosotros from './src/pages/Nosotros/Nosotros' // Changed to relative path
+import Contacts from './src/components/Contacts/Contacts' // Changed to relative path
+import Footer from './src/components/Footer/Footer' // Changed to relative path
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
+    /* Add the basename here. It must match your repo name exactly */
     <Router basename="/Website-Reposteria">
       <div className="app">
         <div className='app.container'>
-          < Layout />
+          <Layout />
           <Contacts className="!hidden md:!flex flex-col fixed top-[15%] right-[4%] z-50 gap-4" />
         </div>
         <div className="pb-32">
@@ -32,9 +72,8 @@ function App() {
           </Routes>
         </div>
         <Footer className="fixed bottom-0 left-0 w-full z-40" />
-
-      </div >
-    </Router >
+      </div>
+    </Router>
   )
 }
 
