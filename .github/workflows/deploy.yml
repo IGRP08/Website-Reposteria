@@ -21,18 +21,23 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'yarn' # Tells GitHub to use Yarn's cache
+          cache: 'yarn'
+          # Tell GitHub where the lock file is for caching
+          cache-dependency-path: client/yarn.lock 
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile # Installs from your yarn.lock
+        working-directory: client
+        run: yarn install
 
       - name: Build
-        run: yarn build # Runs your vite build command
+        working-directory: client
+        run: yarn build
 
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist'
+          # This tells GitHub to host the dist folder found inside client
+          path: 'client/dist'
 
   deploy:
     needs: build_site
