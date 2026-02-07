@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { useState } from 'react'
 import Layout from './src/components/Layout/Layout'
-import './app.css'
+import './App.css'
 import Inicio from '/src/pages/Inicio/Inicio'
 import Servicios from '/src/pages/Servicios/Servicios'
 import Productos from '/src/pages/Productos/Productos'
