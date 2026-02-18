@@ -3,8 +3,6 @@ import './Contacts.css'
 
 
 
-
-
 const Contacts = ({ className }) => {
     const openLink = (URL) => {
         window.open(URL, "_blank")

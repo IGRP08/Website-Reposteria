@@ -2,6 +2,8 @@ import React from 'react'
 import './Inicio.css'
 
 const Inicio = () => {
+
+    console.log("Inicio page loaded");
     return (
         <div className="grid grid-cols-1 w-[325px] !mt-26 !mb-20 !mx-auto justify-items-center items-center lg:grid-cols-2 lg:flex-row 
         lg:w-[885px] lg:h-[450px]  lg:!mt-[8rem] lg:!p-[3rem] lg:items-center lg:justify-between 

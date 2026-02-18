@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './Header.css'
+
 const Header = () => {
 
   const [menuOpen, setMenuOpen] = useState(false);
@@ -9,7 +10,7 @@ const Header = () => {
 
   return (
 
-    <Header className="h-wrapper px-6 lg:px-40 z-[1000]">
+    <header className="h-wrapper px-6 lg:px-40 z-[1000]">
       <div className='h-container max-w-7xl mx-auto'>
 
         <Link to="/" onClick={closeMenu}>
@@ -53,7 +54,7 @@ const Header = () => {
       </div >
 
 
-    </Header>
+    </header>
 
 
   )
