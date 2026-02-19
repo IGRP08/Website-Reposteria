@@ -14,7 +14,7 @@ const Header = () => {
       <div className='h-container max-w-7xl mx-auto'>
 
         <Link to="/" onClick={closeMenu}>
-          <img className="!mx-6 logo" src="assets/logo-bg.png" alt="Logo" />
+          <img className="!mx-6 logo" src="./assets/logo-bg.png" alt="Logo" />
         </Link>
         <nav className='hidden lg:block'>
           <ul className='h-menu'>
