@@ -20,7 +20,7 @@ const Inicio = () => {
 
             <div className="order-2 w-full flex justify-center items-center lg:col-start-2 lg:row-start-1 lg:row-span-2">
                 <img className="w-[280px] h-[225px]  rounded-[1rem]  lg:w-[400px] 
-                lg:h-[360px]" src={`${import.meta.env.BASE_URL}assets/bizcocho.jpg`} alt="Bizcocho de Bodas" />
+                lg:h-[360px]" src={`${import.meta.env.BASE_URL}bizcocho.jpg`} alt="Bizcocho de Bodas" />
             </div>
 
         </div>

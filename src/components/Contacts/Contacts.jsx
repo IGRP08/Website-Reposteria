@@ -19,15 +19,15 @@ const Contacts = ({ className }) => {
         /* Note: We use template literals (backticks) to combine classes */
         <div className={`social-buttons-container ${className}`}>
             <button className="social-button" onClick={() => openLink(whatsappURL)}>
-                <img src={`${import.meta.env.BASE_URL}assets/Whatsapp_icon-color.png`} className="w-7 h-7 lg:w-12 lg:h-12" alt="Whatsapp" />
+                <img src={`${import.meta.env.BASE_URL}Whatsapp_icon-color.png`} className="w-7 h-7 lg:w-12 lg:h-12" alt="Whatsapp" />
             </button>
 
             <button className="social-button" onClick={() => openLink(instagramURL)}>
-                <img src={`${import.meta.env.BASE_URL}assets/instagram_icon_color.png`} className="w-7 h-7 lg:w-12 lg:h-12" alt="Instagram" />
+                <img src={`${import.meta.env.BASE_URL}instagram_icon_color.png`} className="w-7 h-7 lg:w-12 lg:h-12" alt="Instagram" />
             </button>
 
             <button className="social-button" onClick={() => openLink(facebookURL)}>
-                <img src={`${import.meta.env.BASE_URL}assets/facebook_icon-color.png`} className="w-7 h-7 lg:w-12 lg:h-12" alt="Facebook" />
+                <img src={`${import.meta.env.BASE_URL}facebook_icon-color.png`} className="w-7 h-7 lg:w-12 lg:h-12" alt="Facebook" />
             </button>
         </div>
     );
