@@ -5,14 +5,14 @@ const Productos = () => {
     const products = [
         {
             title: "Postres",
-            img: `${import.meta.env.BASE_URL}Bizcocho-porcion-bg.png`,
+            img: `${import.meta.env.BASE_URL}assets/Bizcocho-porcion-bg.png`,
             bgColor: "bg-[#C834CA99]",
             textColor: "text-white",
             imgPos: "right-2 top-1/2 -translate-y-1/2 w-36 lg:right-16 lg:top-28 lg:w-[220px] lg:h-[280px]"
         },
         {
             title: <>Bizcocho<br />Cumpleaños</>,
-            img: `${import.meta.env.BASE_URL}cumpleanos-bg.png`,
+            img: `${import.meta.env.BASE_URL}assets/cumpleanos-bg.png`,
             bgColor: "bg-[#F5EDD8] lg:bg-[#C834CA99]",
             textColor: " text-[#C834CA] lg:text-white",
             // Mobile: Smaller top overlap | Desktop: Your original values
@@ -20,14 +20,14 @@ const Productos = () => {
         },
         {
             title: "Sweet Table",
-            img: `${import.meta.env.BASE_URL}macarronies-bg.png`,
+            img: `${import.meta.env.BASE_URL}assets/macarronies-bg.png`,
             bgColor: "bg-[#C834CA99] lg:bg-[#F5EDD8]",
             textColor: " text-white lg:text-[#C834CA]",
             imgPos: "-right-6 -top-25 w-44 lg:-right-[72px] lg:-top-[160px] lg:w-[340px] lg:h-[430px]"
         },
         {
             title: "Bodas",
-            img: `${import.meta.env.BASE_URL}bodas-bg.png`,
+            img: `${import.meta.env.BASE_URL}assets/bodas-bg.png`,
             bgColor: "bg-[#F5EDD8]",
             textColor: " text-[#C834CA]",
             imgPos: "-right-6 -top-22 w-48 lg:-right-[120px] lg:-top-[220px] lg:w-[420px] lg:h-[540px]"
